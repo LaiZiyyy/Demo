@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: #816b8d;
+}
+
+a:hover {
+    color: #816b8d;
+}
+
+body {
+    background-color: #e7e6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    font-family: "Microsoft Yahei", tahoma, arial;
+}
+
+
+.big {
+    background: #fff;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 50px;
+}
+
+.leftt {
+    background-color: #c8bdce;
+    position: relative;
+    padding: 40px;
+}
+
+
+.face {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.face img {
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.face h2 {
+    color: #fff;
+    font-size: 1em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.face h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.phone {
+    color: #fff;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+li {
+    list-style: none;
+}
+
+.phone li {
+    line-height: 2em;
+}
+
+.phone ul span img {
+    display: inline-block;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.education {
+    color: #fff;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.education li {
+    line-height: 2em;
+}
+
+.education ul span img {
+    display: inline-block;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/* .education .text {
+    font-size: 10px;
+    margin-top: 10px;
+} */
+
+.rightt {
+    position: relative;
+    background-color: white;
+    padding: 40px;
+}
+
+.skill {
+    margin-bottom: 40px;
+    line-height: 1.5em;
+}
+
+.skill:last-child {
+    margin-bottom: 0;
+}
+
+.titlee {
+    color: #816b8d;
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: 3px solid #c8bdce;
+    line-height: 1.5em;
+}
+
+.demo {
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+.demo h3 {
+    color: #c8bdce;
+    /* padding-bottom: 5px; */
+}
+
+.demo span {
+    font-size: 10px;
+}
+
+.demo h4 {
+    color: #c8bdce;
+}
+
+p {
+    background-color: #e7e6f6;
+}
+
+.myself h2 {
+    margin-top: 40px;
+}
