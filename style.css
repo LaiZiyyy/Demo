@@ -11,9 +11,9 @@ a {
     color: black;
 }
 
-a:visited {
+/* a:visited {
     color: #816b8d;
-}
+} */
 
 a:hover {
     color: #816b8d;
@@ -118,11 +118,6 @@ li {
     height: 20px;
 }
 
-/* .education .text {
-    font-size: 10px;
-    margin-top: 10px;
-} */
-
 .rightt {
     position: relative;
     background-color: white;
@@ -153,7 +148,6 @@ li {
 
 .demo h3 {
     color: #c8bdce;
-    /* padding-bottom: 5px; */
 }
 
 .demo span {
