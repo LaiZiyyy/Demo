@@ -1,11 +1,13 @@
 @charset "UTF-8";
 
+/* 为了方便样式的设置，先把全局内边距外边距取消 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* 为了方便样式的设置，把链接自带的默认样式取消 */
 a {
     text-decoration: none;
     color: black;
@@ -15,153 +17,237 @@ a {
     color: #816b8d;
 } */
 
+/* 设置鼠标悬浮于链接上时链接的颜色 */
 a:hover {
     color: #816b8d;
 }
 
+/* 设置整个网页（非盒子）的样式 */
 body {
+    /* 背景颜色 */
     background-color: #e7e6f6;
+    /* 弹性布局，弹性项目如何增大或缩小以适应其弹性容器中可用的空间，以自适应屏幕大小 */
     display: flex;
+    /* 水平对齐弹性项目 */
     justify-content: center;
+    /* 垂直对齐弹性项目 */
     align-items: center;
+    /* 最小高度 */
     min-height: 100vh;
+    /* 向框添加一个或多个阴影 */
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    /* 字体样式 */
     font-family: "Microsoft Yahei", tahoma, arial;
 }
 
-
+/* 最大的盒子，划分左半边和右半边 */
 .big {
+    /* 背景颜色 */
     background: #fff;
+    /* 相对定位 */
     position: relative;
+    /* 设置宽度，不超过盒子最大宽度 */
     width: 100%;
+    /* 设置盒子的最大宽度和最小高度 */
     max-width: 1000px;
     min-height: 1000px;
+    /* 将外层容器变成一个网格布局容器，一行两列，都是自由空间 */
     display: grid;
     grid-template-columns: 1fr 2fr;
+    /* 设置外边距，让这个盒子与网页边缘有空隙，而不是充满整个网页 */
     margin: 50px;
 }
 
+/* 左半边盒子，用来放个人信息介绍 */
 .leftt {
+    /* 背景颜色 */
     background-color: #c8bdce;
+    /* 相对定位 */
     position: relative;
+    /* 设置内边距 */
     padding: 40px;
 }
 
-
+/* 右半边盒子，用来放专业技能、项目经历、自我评价 */
 .face {
+    /* 相对定位 */
     position: relative;
+    /* 弹性布局 */
     display: flex;
+    /* 设置弹性项目的方向 */
     flex-direction: column;
+    /* 垂直对齐弹性项目 */
     align-items: center;
+    /* 只设置下内边距大小 */
     padding-bottom: 20px;
+    /* 设置下边框颜色 */
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* 左半边盒子里的第一个小盒子 */
 .face img {
+    /* 设置图片宽高，高多50px，让图片呈椭圆形 */
     width: 200px;
     height: 250px;
+    /* 文本垂直对齐 */
     text-align: center;
+    /* 设置图片圆角 */
     border-radius: 50%;
 }
 
+/* 左半边盒子的二级标题 */
 .face h2 {
+    /* 颜色 */
     color: #fff;
+    /* 字体大小 */
     font-size: 1em;
+    /* 设置上外边距 */
     margin-top: 20px;
     text-transform: uppercase;
+    /* 文本垂直对齐 */
     text-align: center;
+    /* 字体宽度，加粗600，不加粗是400 */
     font-weight: 600;
+    /* 行高 */
     line-height: 1.4em;
 }
 
+/* 左半边盒子二级标题里的其他文字 */
 .face h2 span {
     font-size: 0.8em;
     font-weight: 300;
 }
 
+/* 左半边盒子里的第二个小盒子，用来存放联系方式 */
 .phone {
+    /* 字体颜色 */
     color: #fff;
+    /* 设置上外边距 */
     margin-top: 20px;
+    /* 设置下内边距 */
     padding-bottom: 20px;
+    /* 设置下边框颜色 */
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* 取消所有盒子里的li的自带样式 */
 li {
     list-style: none;
 }
 
+/* 设置联系方式盒子里li的行高 */
 .phone li {
     line-height: 2em;
 }
 
+/* 设置联系方式盒子里的图标样式 */
 .phone ul span img {
+    /* 将元素转为行内块元素 */
     display: inline-block;
+    /* 设置上外边距 */
     margin-top: 10px;
+    /* 设置图标宽高 */
     width: 20px;
     height: 20px;
 }
 
+/* 左半边盒子里的第三个小盒子，用来存放教育背景 */
 .education {
+    /* 字体颜色 */
     color: #fff;
+    /* 设置上外边距 */
     margin-top: 20px;
+    /* 设置下内边距 */
     padding-bottom: 20px;
 }
 
+/* 设置教育背景盒子里li的行高 */
 .education li {
     line-height: 2em;
 }
 
+/* 设置教育背景盒子里的图标样式 */
 .education ul span img {
+    /* 将元素转为行内块元素 */
     display: inline-block;
+    /* 设置上外边距 */
     margin-top: 10px;
+    /* 设置图标宽高 */
     width: 20px;
     height: 20px;
 }
 
+/* 右半边盒子，用来存放专业技能、项目经历、自我评价 */
 .rightt {
+    /* 相对定位 */
     position: relative;
+    /* 背景颜色 */
     background-color: white;
+    /* 设置内边距 */
     padding: 40px;
 }
 
+/* 右半边盒子的第一个小盒子，用来存放专业技能标题和p */
 .skill {
+    /* 设置下外边距 */
     margin-bottom: 40px;
+    /* 设置行高 */
     line-height: 1.5em;
 }
 
+/* 专业技能盒子里的最后一个孩子，即p */
 .skill:last-child {
+    /* 设置下外边距 */
     margin-bottom: 0;
 }
 
+/* 标题盒子，专门用来存放三个大标题 */
 .titlee {
+    /* 标题颜色 */
     color: #816b8d;
+    /* 设置下外边距 */
     margin-bottom: 10px;
+    /* 设置宽度不超过右半边大盒子宽度 */
     width: 100%;
+    /* 设置下边框粗细、颜色 */
     border-bottom: 3px solid #c8bdce;
+    /* 设置行高 */
     line-height: 1.5em;
 }
 
+/* 右半边盒子里的第二个小盒子，用来存放项目经历 */
 .demo {
+    /* 设置下外边距 */
     margin-bottom: 10px;
+    /* 设置行高 */
     line-height: 1.5em;
 }
 
+/* 项目经历盒子里的三级标题 */
 .demo h3 {
+    /* 标题颜色 */
     color: #c8bdce;
 }
 
+/* 设置起止时间字体样式 */
 .demo span {
     font-size: 10px;
 }
 
+/* 项目经历盒子里的四级标题，即使用工具 */
 .demo h4 {
+    /* 标题颜色 */
     color: #c8bdce;
 }
 
+/* 设置所有段落样式 */
 p {
+    /* 背景颜色 */
     background-color: #e7e6f6;
 }
 
+/* 右半边盒子的第三个小盒子，用来存放自我评价这个二级标题 */
 .myself h2 {
+    /* 设置上外边距 */
     margin-top: 40px;
 }
